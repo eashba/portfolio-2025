@@ -1,0 +1,95 @@
+:root {
+  font-size: 16px;
+  line-height: 1.5;
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  span {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  a {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 2rem;
+  }
+
+  li {
+    margin: 0;
+    padding-bottom: 0.5rem;
+
+    &::marker {
+      color: var(--text-color-secondary);
+    }
+  }
+
+  --gap: 0.6rem;
+
+  // BEGIN COLOR VARIABLES
+  --background-light: #f2f3f4;
+  --background-dark: #100f0f;
+
+  --text-color-dark: #dddddc;
+  --text-color-light: #222;
+
+  --text-color-secondary-light: #aaaaaa;
+  --text-color-secondary-dark: #616161;
+
+  // Default values (light)
+  --background: var(--background-light);
+  --text-color: var(--text-color-light);
+  --sun-icon-color: var(--sun-icon-color-light);
+  --moon-icon-color: var(--moon-icon-color-light);
+  --text-color-secondary: var(--text-color-secondary-light);
+
+  // Dark values
+  &.dark {
+    --background: var(--background-dark);
+    --text-color: var(--text-color-dark);
+    --sun-icon-color: var(--sun-icon-color-dark);
+    --moon-icon-color: var(--moon-icon-color-dark);
+    --text-color-secondary: var(--text-color-secondary-dark);
+  }
+
+  --sun-icon-color-dark: var(--text-color);
+  --sun-icon-color-light: transparent;
+
+  --moon-icon-color-dark: transparent;
+  --moon-icon-color-light: var(--text-color);
+
+
+  // BEGIN SIZE BASED VARIABLES
+  --container-width: 95%;
+
+  @media (min-width: 36rem) {
+    --container-width: 24rem;
+  }
+
+  @media (min-width: 48rem) {
+    --container-width: 36rem;
+  }
+}

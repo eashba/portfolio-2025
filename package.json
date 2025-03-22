@@ -9,6 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.4.0"
+    "@fontsource-variable/arimo": "^5.1.1",
+    "@fontsource-variable/dm-sans": "^5.1.1",
+    "@fontsource-variable/inconsolata": "^5.1.1",
+    "@fontsource-variable/noto-serif": "^5.1.1",
+    "@fontsource-variable/open-sans": "^5.1.1",
+    "astro": "^5.4.0",
+    "sass": "^1.85.1"
+  },
+  "devDependencies": {
+    "prettier": "3.5.2",
+    "prettier-plugin-astro": "0.14.1"
   }
 }

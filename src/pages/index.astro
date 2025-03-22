@@ -1,16 +1,174 @@
 ---
-
+import ThemeIcon from "../components/ThemeIcon.astro";
+import "../styles/global.scss";
+import "../styles/table.scss";
+import "@fontsource-variable/arimo";
+import ProfessionalHistory from "../components/ProfessionalHistory.astro";
 ---
 
+<style lang="scss">
+    body {
+        background: var(--background);
+        color: var(--text-color);
+        font-family: "Arimo Variable", sans-serif;
+    }
+
+    .wrap {
+        display: flex;
+        max-width: var(--container-width);
+        margin: auto;
+        flex-direction: column;
+        gap: 3.2rem;
+        padding: 4rem 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 100%;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+    }
+
+    .group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+    }
+
+    .sub-group {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--gap) / 2);
+    }
+</style>
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <div class="header__title">
+                    <h1>Evan Ashba</h1>
+                    <p>
+                        Senior Software Engineer @ <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            title="Articulate"
+                            href="https://www.articulate.com/">articulate</a
+                        >
+                    </p>
+                </div>
+                <ThemeIcon />
+            </div>
+            <div class="group">
+                <h2>About</h2>
+                <p>Hey there, I'm Evan 👋</p>
+                <p>
+                    I like building things. Currently, I'm building <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        title="Articulate AI Assistant"
+                        href="https://www.articulate.com/360/ai-assistant/"
+                        >ai things</a
+                    > at
+                    <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        title="Articulate"
+                        href="https://www.articulate.com/">articulate</a
+                    >. When I'm not working, I like to drink pu'er tea and spend
+                    time with my partner and our two cats.
+                </p>
+            </div>
+
+            <div class="group">
+                <h2>Professional History</h2>
+                <ProfessionalHistory />
+            </div>
+
+            <div class="group">
+                <h2>Education</h2>
+                <div class="sub-group">
+                    <p>Kettering University - Flint, MI (2016 - 2020)</p>
+                    <p>Bachelor of Science - Computer Science</p>
+                </div>
+            </div>
+
+            <div class="group">
+                <h2>Personal Work</h2>
+                <p>A couple things I've built for fun</p>
+                <ul>
+                    <li>
+                        <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            title="Astro"
+                            href="https://planets-generator.vercel.app/"
+                            >planets generator</a
+                        >
+                        <span
+                            >: A stylized 3D procedural planet generation with
+                            three.js and custom GLSL shaders.
+                        </span>
+                    </li>
+                    <li>
+                        <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            title="Astro"
+                            href="https://markov-names.vercel.app/"
+                            >markov names</a
+                        ><span
+                            >: A procedural name generator that generates new,
+                            original names based on existing datasets.</span
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <div class="group">
+                <h2>Links</h2>
+                <p>Where you can find me</p>
+                <ul>
+                    <li>
+                        <a
+                            href="mailto:contact@evnsh.dev"
+                            rel="noopener noreferrer"
+                            title="Email Me"
+                            target="_blank">contact@evn.simplelogin.com</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            title="LinkedIn"
+                            href="https://www.linkedin.com/in/evan-ashba/"
+                            >LinkedIn</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            title="GitHub"
+                            href="https://github.com/eashba">GitHub</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
