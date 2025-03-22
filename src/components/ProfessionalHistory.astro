@@ -6,12 +6,6 @@ type HistoryItem = {
     companyUrl: string;
     startDate: string;
     endDate: string;
-
-    positions: {
-        title: string;
-        startDate: string;
-        endDate: string;
-    }[];
 };
 
 const historyItems: HistoryItem[] = [
@@ -20,49 +14,18 @@ const historyItems: HistoryItem[] = [
         companyUrl: "https://www.articulate.com/",
         startDate: "2023",
         endDate: "present",
-        positions: [
-            {
-                title: "Senior Software Engineer",
-                startDate: "2024",
-                endDate: "present",
-            },
-            {
-                title: "Software Engineer",
-                startDate: "2023",
-                endDate: "2024",
-            },
-        ],
     },
     {
         companyName: "fresh",
         companyUrl: "https://www.fresh.technology/",
         startDate: "2021",
         endDate: "2023",
-        positions: [
-            {
-                title: "Software Engineer",
-                startDate: "2021",
-                endDate: "2023",
-            },
-        ],
     },
     {
         companyName: "grid",
         companyUrl: "https://workwithgrid.com/",
         startDate: "2016",
         endDate: "2021",
-        positions: [
-            {
-                title: "Software Engineer",
-                startDate: "2020",
-                endDate: "2021",
-            },
-            {
-                title: "Co-op Developer",
-                startDate: "2016",
-                endDate: "2021",
-            },
-        ],
     },
 ];
 ---
