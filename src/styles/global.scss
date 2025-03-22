@@ -85,11 +85,7 @@
   // BEGIN SIZE BASED VARIABLES
   --container-width: 95%;
 
-  @media (min-width: 36rem) {
-    --container-width: 24rem;
-  }
-
-  @media (min-width: 48rem) {
+  @media (min-width: 44rem) {
     --container-width: 36rem;
   }
 }
